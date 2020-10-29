@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width">
+  <title>Book Store</title>
+</head>
+<body>
+
+{{>navbar}}
+
+<div class="container">
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Welcome, to the Book store!</h1>
+        </div>
+    </div>  
+
+    <div class="row justify-content-center">
+        {{#each books}}
+        <div class="col-sm-12 col-md-4 col-lg-3">
+
+            <div class="card">
+                <img src="{{this.coverUrl}}" alt="" class="bd-placeholder-img card-img-top">                
+                <div class="card-body">
+                    <h5 class="card-title">{{this.bookName}}</h5>
+                    <p class="card-text">
+                        <div class="row">
+                            <div class="col-12" style="margin: 12px 0">
+                                <h6 class="h6">Authors</h6>
+                                {{#each this.Authors}}
+                                    {{this.authorName}}<br>
+                                {{/each}}
+                            </div>
+                            <div class="col-12" style="margin: 12px 0">
+                                <h6 class="h6">Genres</h6>  
+                                {{#each this.Genres}}
+                                    {{this.genreName}}<br>
+                                {{/each}}
+                            </div>
+                            <div class="col-12" style="margin: 12px 0">
+                                <h6 class="h6">Publisher</h6>
+                                {{this.Publisher.publisherName}}
+                            </div>
+                        </div>       
+                    </p>
+                    <a href="/books/{{this.id}}" class="btn btn-secondary">More info</a>
+                </div>
+            </div>
+
+           
+        </div><!-- End col -->
+        {{/each}}
+    </div><!-- End row -->
+
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
+
+
+

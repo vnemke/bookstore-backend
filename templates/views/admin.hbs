@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="book-form">
+        {{!-- book name --}}
+        <label for="book-name">Book name:</label>
+        <input type="text" id="book-name" name="book-name">
+        <br>
+        <br>
+
+        {{!-- authors --}}
+        <label for="authors">author:</label>
+        <select id="authors" name="authors"></select>
+        <span id="authorButton">Add author</span>
+        <ul id="authors-list"></ul>
+        <br>
+
+        {{!-- genres --}}
+        <label for="genres">genre:</label>
+        <select id="genres" name="genres">
+        </select>
+        <span id="genreButton">Add genre</span>
+        <ul id="genres-list"></ul>
+        <br>
+
+        {{!-- publisher --}}
+        <label for="publishers">publisher:</label>
+        <select id="publishers" name="publishers">
+        </select>
+        <br>
+        <br>
+        
+
+        {{!-- book year --}}
+        <label for="book-year">Book year:</label>
+        <input type="number" id="book-year" name="book-year" min="1000" max="2050">
+        <br>
+        <br>
+
+        {{!-- book description --}}
+        <label for="book-description">Book description:</label>
+        <textarea rows="4" cols="50" id="book-description" name="book-description">
+        </textarea>
+        <br>
+        <br>
+
+        {{!-- book cover picture --}}
+        <label for="book-cover">Book cover:</label>
+        <input type="url" id="book-cover" name="book-cover">
+        <br>
+        <br>
+
+        {{!-- book price --}}
+        <label for="book-price">Book price:</label>
+        <input type="text" id="book-price" name="book-price">
+        <br>
+        <br>
+
+        {{!-- submit book --}}
+        <button id="submit-book" name="submit-book">Submit book</button>
+    </form>
+
+    <script src="/js/authors.js"></script>
+    <script src="/js/genres.js"></script>
+    <script src="/js/publishers.js"></script>
+    <script src="/js/book-complete.js"></script>
+</body>
+
+</html>

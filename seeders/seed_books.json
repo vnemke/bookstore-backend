@@ -1,0 +1,34 @@
+[
+    {
+        "bookName": "Jungle book",
+        "releaseYear": "1871",
+        "authors": [1],
+        "genre": [1],
+        "PublisherId": 1,
+        "price": "600 RSD",
+        "description": "The Jungle Book is a classic story of friendship between man and beast.", 
+        "coverUrl":"https://images-na.ssl-images-amazon.com/images/I/81lm586hHtL._SL1200_.jpg"
+    },
+
+    {
+        "bookName": "Tom Sawyer",
+        "releaseYear": "1895",
+        "authors": [2],
+        "genre": [2,3],
+        "PublisherId": 2,
+        "price": "700 RSD",
+        "description": "An idyllic snapshot of a boy's childhood along the banks of the Mississippi River.",
+        "coverUrl":"https://images-na.ssl-images-amazon.com/images/I/51ClY-DbIDL.jpg"
+    },
+
+    {
+        "bookName": "Harry Poter",
+        "releaseYear": "1997",
+        "authors": [1,3],
+        "genre": [2],
+        "PublisherId": 3,
+        "price": "650 RSD",
+        "description": "Based on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne.",
+        "coverUrl":"https://images-na.ssl-images-amazon.com/images/I/51ifu1aebKL._SX332_BO1,204,203,200_.jpg"
+    }
+]
